@@ -1,0 +1,1 @@
+upAndDown.vba: call delete('/Users/jochenheizmann/.vim/plugin/upAndDown.vim')
