@@ -1,6 +1,6 @@
 Installation:
 
-    git clone git://github.com:JochenHeizmann/dotvim.git ~/.vim
+    git clone git@github.com:JochenHeizmann/dotvim.git ~/.vim
 
 Create symlinks:
 
