@@ -12,3 +12,23 @@ Switch to the `~/.vim` directory, and fetch submodules:
 cd ~/.vim
 git submodule init
 git submodule update
+
+When you start VIM for the first time, the following plugins will be installed automatically (thanks to vim-addon-manager):
+
+    * FuzzyFinder
+    * L9
+    * MRU
+    * The_NERD_tree
+    * snipMate
+    * tComment
+    * taglist
+    * tlib
+    * vim-addon-actions
+    * vim-addon-background-cmd
+    * vim-addon-completion
+    * vim-addon-goto-thing-at-cursor
+    * vim-addon-manager-known-repositories
+    * vim-addon-mw-utils
+    * vim-addon-swfmill
+    * vim-addon-views
+    * vim-haxe
