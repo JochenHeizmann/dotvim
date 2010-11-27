@@ -101,7 +101,7 @@ if has("autocmd")
 endif
 
 fun! ActivateAddons()
-    set runtimepath+=~/vim-addons/vim-addon-manager
+    set runtimepath+=~/.vim/vim-addons/vim-addon-manager
     try
         call scriptmanager#Activate(['FuzzyFinder', 'vim-haxe', 'The_NERD_tree', 'taglist', 'MRU', "snipMate", "tComment"])
     catch /.*/
