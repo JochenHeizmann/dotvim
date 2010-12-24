@@ -38,8 +38,9 @@ let tlist_haxe_settings='haxe;f:functions;v:variables;c:classes;i:interfaces;e:e
 let Tlist_Auto_Open = 0
 let Tlist_Exit_OnlyWindow = 1
 
-let g:haxe_build_hxml="/Users/jochenheizmann/Documents/workspace_fdt/Demo/project.hxml"
-set makeprg=~/Documents/workspace_fdt/Demo/make.sh
+" let g:haxe_build_hxml="/Users/jochenheizmann/Projekte/mvctest/myapp.hxml"
+let g:haxe_build_hxml="/Users/jochenheizmann/Projekte/Masterplan/make.hxml"
+set makeprg=~/Projekte/Masterplan/make.sh
 
 map <F2> :FufFile<CR>
 map <F3> :NERDTree<CR>
@@ -59,7 +60,6 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType rb,ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType sql set omnifunc=sqlcomplete#Complete
 autocmd Filetype * set omnifunc=syntaxcomplete#Complete
-"autocmd FileType hx set omnifunc=haxeOmnicomplete#Complete
 
 " Commenter
 map ,/ :s/^/\/\//<CR>
@@ -103,11 +103,10 @@ endif
 fun! ActivateAddons()
     set runtimepath+=~/.vim/vim-addons/vim-addon-manager
     try
-        call scriptmanager#Activate(['FuzzyFinder', 'vim-haxe', 'The_NERD_tree', 'taglist', 'MRU', "snipMate", "tComment"])
+        call scriptmanager#Activate(['FuzzyFinder', 'vim-haxe', 'The_NERD_tree', 'taglist', 'MRU', 'snipMate', 'tComment', 'xmledit'])
     catch /.*/
         echoe v:exception
         :co
     endtry
 endf
 call ActivateAddons()
-
