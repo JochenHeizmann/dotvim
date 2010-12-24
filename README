@@ -9,9 +9,9 @@ Create symlinks:
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
-cd ~/.vim
-git submodule init
-git submodule update
+    cd ~/.vim
+    git submodule init
+    git submodule update
 
 When you start VIM for the first time, the following plugins will be installed automatically (thanks to vim-addon-manager):
 
@@ -32,3 +32,4 @@ When you start VIM for the first time, the following plugins will be installed a
     * vim-addon-swfmill
     * vim-addon-views
     * vim-haxe
+    * xmledit
