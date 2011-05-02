@@ -103,7 +103,7 @@ endif
 fun! ActivateAddons()
     set runtimepath+=~/.vim/vim-addons/vim-addon-manager
     try
-        call scriptmanager#Activate(['FuzzyFinder', 'vim-haxe', 'The_NERD_tree', 'taglist', 'MRU', 'snipMate', 'tComment', 'xmledit'])
+        call vam#ActivateAddons(['FuzzyFinder', 'vim-haxe', 'The_NERD_tree', 'taglist', 'MRU', 'snipMate', 'tComment', 'xmledit'])
     catch /.*/
         echoe v:exception
         :co
